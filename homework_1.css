@@ -1,0 +1,15 @@
+#notNumber
+{color: red;
+text-align: center;
+}
+#notPrime
+{color: blue;
+text-align: center;
+}
+#normal
+{
+text-align: center;
+}
+body
+{font-size:30px;
+text-align:center;}
