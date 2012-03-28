@@ -1,15 +1,19 @@
 #notNumber
+/* design when parameter is not a number ot it is out of the range [0 - 19999] */
 {color: red;
 text-align: center;
 }
 #notPrime
+/* design when parameter is not prime number*/
 {color: blue;
 text-align: center;
 }
 #normal
+/* design when the parameter is not set or it is prime */
 {
 text-align: center;
 }
 body
+/* design for all text */
 {font-size:30px;
 text-align:center;}

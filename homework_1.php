@@ -6,6 +6,7 @@
 	<body>
 		<?php 
 			function is_prime($i)
+			//checks is the number prime or not 
 			{
 				$sqr= sqrt($i);
 				$var=2;
@@ -27,30 +28,37 @@
 				return true;
 			}
 			if(!isset ($_GET['number']))
-			{
+			//checks if the user hasn`t set a GET parameter
+			{	
 				echo "<span id=\"normal\">Add the right thing in the address bar!</span>"; 
 			}
 			else
+			// if the GET parameter is set
 			{
 				$number=$_GET['number'];
 				if(! is_numeric($number))
+				// checks does the parameter is a number
 				{
 					echo "<span id=\"notNumber\">The parameter is not a number</span>";
 				}
 				else
 				{
+				//if it is not a number then
 					if ($number < 0 or $number > 19999)
 					{
+					//checks is the number in the range [0 - 19999]
 						echo "<span id=\"notInteger\">The parameter is not within the range [0, 19999]</span>";
 					}
 					else
-					{
+					{// if it is in the range
 						if (is_prime($number))
 						{
+						//checks is the integer is prime by calling is_prime function
 							echo "<span id=\"normal\">The number ". $number . " is prime!</span>";
 						}
 						else
 						{
+							//if it is not prime this message is printed
 							echo "<span id=\"notPrime\">The number " . $number . " is NOT prime!</span>";
 						}
 					}

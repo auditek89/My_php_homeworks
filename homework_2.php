@@ -6,8 +6,10 @@
 	<body>
 		<?php
 		$myArray=range(20,1000,37);
+		// create array 
 		function is_prime($i)
 		{
+		// checks if a number is prime or not
 			$sqr= sqrt($i);
 			$var=2;
 			if($i==1)
@@ -24,6 +26,7 @@
 		}
 		function find_3_prime($arr)
 		{
+		// check which is the third prime number in array
 			$counter = 0;
 			foreach($arr as $number)
 				{
@@ -39,7 +42,9 @@
 				}
 		}
 		function check_exist($arr)
-			{ if( in_array(146, $arr))
+			{
+				// check does three given numbers exist in array
+				if( in_array(146, $arr))
 				{
 					echo "The number 146 exist in the array!<br/>";
 				}
@@ -65,6 +70,7 @@
 				}
 			}
 		?>
+		<!-- display the results of calling the defined functions -->
 		<h3>The result from the function find_3_prime!</h3>
 			<div id="function">
 				<?php
